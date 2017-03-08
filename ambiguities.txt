@@ -1,0 +1,19 @@
+Paragraph: 7
+Problem:
+Our solution: We are assuming that the '_' symbol is used for ambiguity purposes, and can appear in integers, rationals and floats
+
+
+Problem:
+Our solution: We are assuming rationals cannot be written using a negative number in the denominator - this is to avoid the occurence
+of successive '/' and '-' symbols
+
+Paragraph: 5
+Problem: We used the exact same symbols for wrapping the characters as specified in the pdf. We later found out this
+was not properly parsed
+Our solution: We decided to switch it with the single quote character: '
+              instead of using the character: ’
+
+Paragraph: 8
+Problem: We identified in the example dict in the specifications a nested dict that was not assigned a key/value as in key:value
+Our solution: We decided to assume this is an error, and forced the key:value format to be applied. Nested dicts are still
+              allowed.
